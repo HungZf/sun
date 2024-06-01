@@ -1,4 +1,4 @@
-import {  RouterLink } from '@angular/router';
+import {  Router, RouterLink } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Product, OrderDetail } from './web-lap.module';
 import { WebLapService } from './web-lap.service';
@@ -31,10 +31,12 @@ export class WebLapComponent implements OnInit {
     private productService: WebLapService, 
     private notificationService: NotificationService,
     private cartService: CartService,
-    private userService: HeaderService
+    private userService: HeaderService,
+    private router : Router
   ) {}
   onButtonClick(productId: number, price: number): void {
     this.token = localStorage.getItem('accessToken');
+    if(this.token == null) { this.router.navigateByUrl("/login")}
     if (this.token) {
       const quantity = 1;
       this.productService

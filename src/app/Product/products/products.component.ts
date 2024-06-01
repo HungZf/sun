@@ -44,6 +44,7 @@ export class ProductsComponent implements OnInit {
   ) {}
   onButtonClick(productId: number, price: number): void {
     this.token = localStorage.getItem('accessToken');
+    if(this.token == null) { this.router.navigateByUrl("/login")}
     if (this.token) {
       const quantity = 1;
       this.productService

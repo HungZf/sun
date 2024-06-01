@@ -38,12 +38,14 @@ export class ProductDetailComponent implements OnInit {
     private route: ActivatedRoute,
     private notificationService: NotificationService,
     private productService: ProductDetailService,
-    private userService: HeaderService
+    private userService: HeaderService,
+    private router: Router
   ) {
     this.editObj = new Edit();
   }
   onButtonClick(productId: number, price: number): void {
     this.token = localStorage.getItem('accessToken');
+    if(this.token == null) { this.router.navigateByUrl("/login")}
     if (this.token) {
       const quantity = 1;
       this.productService
@@ -70,6 +72,7 @@ export class ProductDetailComponent implements OnInit {
 
   onButton1Click(productId1: number, price1: number) {
     this.token = localStorage.getItem('accessToken');
+    if(this.token == null) { this.router.navigateByUrl("/login")}
     if (this.token) {
       this.productService
         .postOrderdetail(this.token, price1, productId1, this.editObj.quantity)
