@@ -6,8 +6,8 @@ import { Product,OrderDetail } from './web-lap.module';
   providedIn: 'root',
 })
 export class WebLapService {
-  private apiUrl = 'http://localhost:3000/product';
-  private apiUrl1 = 'http://localhost:3000/orderdetail';
+  private apiUrl = 'https://index-1242.onrender.com/product';
+  private apiUrl1 = 'https://index-1242.onrender.com/orderdetail';
   
   constructor(private http: HttpClient) {}
 

@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class EditcategoryService {
 
-  private apiUrl = 'http://localhost:3000/category';
+  private apiUrl = 'https://index-1242.onrender.com/category';
 
   constructor(private http: HttpClient) {}
   updateCategory(id: string, category: Category): Observable<Category> {

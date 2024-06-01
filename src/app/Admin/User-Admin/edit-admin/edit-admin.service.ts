@@ -6,7 +6,7 @@ import { User } from './edit-admin.module';
   providedIn: 'root'
 })
 export class EditAdminService {
-  private apiUrl = 'http://localhost:3000/users/me';
+  private apiUrl = 'https://index-1242.onrender.com/users/me';
 
   constructor(private http: HttpClient) { }
   

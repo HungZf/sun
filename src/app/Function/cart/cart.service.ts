@@ -6,11 +6,11 @@ import { OrderDetail,Product,Payment } from './cart.module';
   providedIn: 'root'
 })
 export class CartService {
-  private apiUrl1 = 'http://localhost:3000/product';
-  private apiUrl2 = 'http://localhost:3000/orderdetail/cart';
-  private apiUrl3 = 'http://localhost:3000/orderdetail/update';
-  private apiUrl4 = 'http://localhost:3000/orderdetail/delete';
-  private apiUrl5 = 'http://localhost:3000/payment';
+  private apiUrl1 = 'https://index-1242.onrender.com/product';
+  private apiUrl2 = 'https://index-1242.onrender.com/orderdetail/cart';
+  private apiUrl3 = 'https://index-1242.onrender.com/orderdetail/update';
+  private apiUrl4 = 'https://index-1242.onrender.com/orderdetail/delete';
+  private apiUrl5 = 'https://index-1242.onrender.com/payment';
   constructor(private http: HttpClient) { }
   private orderDetailsSubject = new BehaviorSubject<OrderDetail[]>([]);
   orderDetails$: Observable<OrderDetail[]> = this.orderDetailsSubject.asObservable();

@@ -6,7 +6,7 @@ import { Password } from './change-password-admin.module';
   providedIn: 'root'
 })
 export class ChangePasswordAdminService {
-  private apiUrl = 'http://localhost:3000/users/change-password';
+  private apiUrl = 'https://index-1242.onrender.com/users/change-password';
 
   constructor(private http: HttpClient) {}
 

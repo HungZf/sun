@@ -6,8 +6,8 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class DeletepostService {
-  private apiUrl = 'http://localhost:3000/post';
-  private apiUrl1 = 'http://localhost:3000/post/get';
+  private apiUrl = 'https://index-1242.onrender.com/post';
+  private apiUrl1 = 'https://index-1242.onrender.com/post/get';
   constructor(private http: HttpClient) {}
   deletePost(id: string): Observable<Post> {
     const url = `${this.apiUrl}/${id}`;

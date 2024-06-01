@@ -26,7 +26,7 @@ export class AddpostComponent {
    // debugger;
     const published = this.postObj.published;
     // Assuming this.signupObj contains the registration data
-    this.http.post<any>('http://localhost:3000/post', this.postObj).subscribe({
+    this.http.post<any>('https://index-1242.onrender.com/post', this.postObj).subscribe({
       next: (res) => {
         if (res) {
           console.log(res);
@@ -38,7 +38,7 @@ export class AddpostComponent {
             formData.append('image', this.selectedFile);
           }
           this.http
-            .post<any>('http://localhost:3000/post/local', formData)
+            .post<any>('https://index-1242.onrender.com/post/local', formData)
             .subscribe({
               next: () => {
                

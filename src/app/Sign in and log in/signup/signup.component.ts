@@ -24,7 +24,7 @@ export class SignupComponent {
   onSigup() {
     // Assuming this.signupObj contains the registration data
     this.http
-      .post<any>('http://localhost:3000/auth/register', this.signupObj)
+      .post<any>('https://index-1242.onrender.com/auth/register', this.signupObj)
       .subscribe({
         next:(res) => {
             if (res) {

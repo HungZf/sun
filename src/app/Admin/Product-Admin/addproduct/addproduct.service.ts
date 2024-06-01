@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http'
   providedIn: 'root'
 })
 export class AddproductService {
-  private apiUrl  = 'http://localhost:3000/category';
+  private apiUrl  = 'https://index-1242.onrender.com/category';
   constructor(private http: HttpClient) {}
   getCategory(): Observable<Category> {
     return this.http.get<Category>(this.apiUrl);

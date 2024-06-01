@@ -8,8 +8,8 @@ import { Role, User } from './customeradmin.module';
 })
 export class CustomeradminService {
 
-  private apiUrl = 'http://localhost:3000/users';
-  private apiUrl1 = 'http://localhost:3000/role';
+  private apiUrl = 'https://index-1242.onrender.com/users';
+  private apiUrl1 = 'https://index-1242.onrender.com/role';
   
   constructor(private http: HttpClient) { }
   getUser(): Observable<User> {

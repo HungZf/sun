@@ -8,9 +8,9 @@ import { Order ,OrderDetail,Product} from './detail.module';
 })
 export class DetailService {
 
-  private apiUrl = 'http://localhost:3000/order/user/orderWait';
-  private apiUrl1 = 'http://localhost:3000/product';
-  private apiUrl2 = 'http://localhost:3000/order/inOrder'; 
+  private apiUrl = 'https://index-1242.onrender.com/order/user/orderWait';
+  private apiUrl1 = 'https://index-1242.onrender.com/product';
+  private apiUrl2 = 'https://index-1242.onrender.com/order/inOrder'; 
  
   
   constructor(private http: HttpClient) { }

@@ -6,8 +6,8 @@ import { Post } from './postadmin.module';
   providedIn: 'root'
 })
 export class PostadminService {
-  private apiUrl = 'http://localhost:3000/post';
-  private apiUrl1 = 'http://localhost:3000/post/search';
+  private apiUrl = 'https://index-1242.onrender.com/post';
+  private apiUrl1 = 'https://index-1242.onrender.com/post/search';
   constructor(private http: HttpClient) { }
   getPosts(): Observable<Post[]> {
     return this.http.get<Post[]>(this.apiUrl);

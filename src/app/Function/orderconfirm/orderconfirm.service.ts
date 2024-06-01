@@ -7,8 +7,8 @@ import { Order,Product } from './orderconfirm.module';
 })
 export class OrderconfirmService {
 
-  private apiUrl1 = 'http://localhost:3000/product';
-  private apiUrl2 = 'http://localhost:3000/order/user/orderComplete'; 
+  private apiUrl1 = 'https://index-1242.onrender.com/product';
+  private apiUrl2 = 'https://index-1242.onrender.com/order/user/orderComplete'; 
  
   constructor(private http: HttpClient) { }
   getOrder(token?: string | null): Observable<Order> {

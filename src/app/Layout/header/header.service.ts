@@ -6,11 +6,11 @@ import { User,Category,Order,OrderDetail,Product} from './header.module';
   providedIn: 'root'
 })
 export class HeaderService {
-  private apiUrl = 'http://localhost:3000/users/me';
-  private apiUrl1 = 'http://localhost:3000/category/search/type';
-  private apiUrl2 = 'http://localhost:3000/order';
-  private apiUrl3 = 'http://localhost:3000/product';
-  private apiUrl4 = 'http://localhost:3000/orderdetail/cart';
+  private apiUrl = 'https://index-1242.onrender.com/users/me';
+  private apiUrl1 = 'https://index-1242.onrender.com/category/search/type';
+  private apiUrl2 = 'https://index-1242.onrender.com/order';
+  private apiUrl3 = 'https://index-1242.onrender.com/product';
+  private apiUrl4 = 'https://index-1242.onrender.com/orderdetail/cart';
   constructor(private http: HttpClient) { }
 
   getUser(token?: string | null): Observable<User> {

@@ -6,7 +6,7 @@ import { User } from './login.module';
   providedIn: 'root'
 })
 export class LoginService {
-  private apiUrl = 'http://localhost:3000/users/me';
+  private apiUrl = 'https://index-1242.onrender.com/users/me';
   constructor(private http: HttpClient) { }
   getUser(token?: string | null): Observable<User> {
     return this.http.get<User>(this.apiUrl, { headers: { Authorization: `Bearer ${token}` } });

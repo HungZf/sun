@@ -34,7 +34,7 @@ export class LoginComponent {
   }
   onLogin() {
     this.http
-      .post<any>('http://localhost:3000/auth/login', this.loginObj)
+      .post<any>('https://index-1242.onrender.com/auth/login', this.loginObj)
       .subscribe({
         next: (res) => {
             if (res && res.accessToken) {

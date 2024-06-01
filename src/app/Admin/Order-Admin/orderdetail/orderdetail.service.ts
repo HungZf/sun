@@ -7,12 +7,12 @@ import { Order ,User,OrderDetail,Product} from './orderdetail.module';
   providedIn: 'root'
 })
 export class OrderdetailService {
-  private apiUrl = 'http://localhost:3000/order/user/orderWait';
-  private apiUrl1 = 'http://localhost:3000/users/infor';
-  private apiUrl2 = 'http://localhost:3000/product';
-  private apiUrl3 = 'http://localhost:3000/order/inOrder'; 
-  private apiUrl4 = 'http://localhost:3000/order/confirm'
-  private apiUrl5 = 'http://localhost:3000/order/cancel'
+  private apiUrl = 'https://index-1242.onrender.com/order/user/orderWait';
+  private apiUrl1 = 'https://index-1242.onrender.com/users/infor';
+  private apiUrl2 = 'https://index-1242.onrender.com/product';
+  private apiUrl3 = 'https://index-1242.onrender.com/order/inOrder'; 
+  private apiUrl4 = 'https://index-1242.onrender.com/order/confirm'
+  private apiUrl5 = 'https://index-1242.onrender.com/order/cancel'
   
   constructor(private http: HttpClient) { }
   getOrderById(orderId: string): Observable<Order> {

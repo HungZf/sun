@@ -6,11 +6,11 @@ import { Product, Category,OrderDetail } from './products.module';
   providedIn: 'root'
 })
 export class ProductsService {
-  private apiUrl = 'http://localhost:3000/product';
-  private apiUrl1 = 'http://localhost:3000/orderdetail';
-  private apiUrl2 = 'http://localhost:3000/category';
-  private apiUrl3 = 'http://localhost:3000/product/search';
-  private apiUrl4 = 'http://localhost:3000/category/search/type';
+  private apiUrl = 'https://index-1242.onrender.com/product';
+  private apiUrl1 = 'https://index-1242.onrender.com/orderdetail';
+  private apiUrl2 = 'https://index-1242.onrender.com/category';
+  private apiUrl3 = 'https://index-1242.onrender.com/product/search';
+  private apiUrl4 = 'https://index-1242.onrender.com/category/search/type';
   constructor(private http: HttpClient) {}
 
   getProduct(): Observable<Product> {

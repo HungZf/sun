@@ -20,7 +20,7 @@ export class AddcustomerComponent {
 onAddadmin() {
 
   // Assuming this.signupObj contains the registration data
-  this.http.post<any>('http://localhost:3000/auth/admin-register', this.addadminObj).subscribe(
+  this.http.post<any>('https://index-1242.onrender.com/auth/admin-register', this.addadminObj).subscribe(
       {next: (res) => {
         if (res) {
             console.log(res);

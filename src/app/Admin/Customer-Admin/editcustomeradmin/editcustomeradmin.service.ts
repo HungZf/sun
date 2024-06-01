@@ -6,8 +6,8 @@ import { User } from './editcustomeradmin.module';
   providedIn: 'root'
 })
 export class EditcustomeradminService {
-  private apiUrl = 'http://localhost:3000/users/infor';
-  private apiUrl1 = 'http://localhost:3000/users/update';
+  private apiUrl = 'https://index-1242.onrender.com/users/infor';
+  private apiUrl1 = 'https://index-1242.onrender.com/users/update';
  
   constructor(private http: HttpClient) { }
   getUser(Id: string): Observable<User> {

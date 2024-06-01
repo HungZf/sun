@@ -7,8 +7,8 @@ import { Order ,User} from './cancel-order.module';
 })
 export class CancelOrderService {
 
-  private apiUrl = 'http://localhost:3000/order/allCancel';
-  private apiUrl1 = 'http://localhost:3000/users/infor';
+  private apiUrl = 'https://index-1242.onrender.com/order/allCancel';
+  private apiUrl1 = 'https://index-1242.onrender.com/users/infor';
   constructor(private http: HttpClient) { }
   getOrder(): Observable<Order> {
     return this.http.get<Order>(this.apiUrl);

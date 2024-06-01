@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CategoryadminService {
-  private apiUrl = 'http://localhost:3000/category';
-  private apiUrl1 = 'http://localhost:3000/category/search/name';
+  private apiUrl = 'https://index-1242.onrender.com/category';
+  private apiUrl1 = 'https://index-1242.onrender.com/category/search/name';
   constructor(private http: HttpClient) { }
   getCategory(): Observable<Category> {
     return this.http.get<Category>(this.apiUrl);

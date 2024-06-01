@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DeleteproductService {
 
-  private apiUrl = 'http://localhost:3000/product';
+  private apiUrl = 'https://index-1242.onrender.com/product';
 
   constructor(private http: HttpClient) {}
   deleteProduct(id: string): Observable<Product> {

@@ -8,7 +8,7 @@ import { Post } from './post.module';
   providedIn: 'root'
 })
 export class PostService {
-  private apiUrl = 'http://localhost:3000/post';
+  private apiUrl = 'https://index-1242.onrender.com/post';
   constructor(private http: HttpClient) { }
   getPosts(): Observable<Post[]> {
     return this.http.get<Post[]>(this.apiUrl);

@@ -7,8 +7,8 @@ import { Order,Product } from './order.module';
   providedIn: 'root'
 })
 export class OrderService {
-  private apiUrl1 = 'http://localhost:3000/product';
-  private apiUrl2 = 'http://localhost:3000/order/user/order'; 
+  private apiUrl1 = 'https://index-1242.onrender.com/product';
+  private apiUrl2 = 'https://index-1242.onrender.com/order/user/order'; 
  
   constructor(private http: HttpClient) { }
   getOrder(token?: string | null): Observable<Order> {

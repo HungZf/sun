@@ -7,7 +7,7 @@ import { Payment } from './payment.module';
   providedIn: 'root'
 })
 export class PaymentService {
-  private apiUrl = 'http://localhost:3000/payment';
+  private apiUrl = 'https://index-1242.onrender.com/payment';
   constructor(private http: HttpClient) { }
   getPayment(): Observable<Payment> {
     return this.http.get<Payment>(this.apiUrl);

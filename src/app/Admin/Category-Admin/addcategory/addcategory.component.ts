@@ -22,7 +22,7 @@ export class AddcategoryComponent {
 onCategory() {
 debugger
   // Assuming this.signupObj contains the registration data
-  this.http.post<any>('http://localhost:3000/category', this.categoryObj).subscribe(
+  this.http.post<any>('https://index-1242.onrender.com/category', this.categoryObj).subscribe(
      {next: (res) => {
       if (res) {
           console.log(res);

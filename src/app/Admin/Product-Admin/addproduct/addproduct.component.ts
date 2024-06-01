@@ -33,7 +33,7 @@ export class AddproductComponent implements OnInit{
 onProduct() {
  // debugger
     // Assuming this.signupObj contains the registration data
-    this.http.post<any>('http://localhost:3000/product', this.productObj).subscribe(
+    this.http.post<any>('https://index-1242.onrender.com/product', this.productObj).subscribe(
      {next :    (res) => {
       if (res) {
           console.log(res);
@@ -44,7 +44,7 @@ onProduct() {
             formData.append('photo', this.selectedFile);
           }
           this.http
-            .post<any>('http://localhost:3000/product/local', formData)
+            .post<any>('https://index-1242.onrender.com/product/local', formData)
             .subscribe({
               next: () => {
                

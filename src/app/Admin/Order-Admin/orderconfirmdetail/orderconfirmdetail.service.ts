@@ -7,10 +7,10 @@ import { Order ,User,OrderDetail,Product} from './orderconfirmdetail.module';
 })
 export class OrderconfirmdetailService {
 
-  private apiUrl = 'http://localhost:3000/order/user/orderWait';
-  private apiUrl1 = 'http://localhost:3000/users/infor';
-  private apiUrl2 = 'http://localhost:3000/product';
-  private apiUrl3 = 'http://localhost:3000/order/detail'; 
+  private apiUrl = 'https://index-1242.onrender.com/order/user/orderWait';
+  private apiUrl1 = 'https://index-1242.onrender.com/users/infor';
+  private apiUrl2 = 'https://index-1242.onrender.com/product';
+  private apiUrl3 = 'https://index-1242.onrender.com/order/detail'; 
   
   constructor(private http: HttpClient) { }
   getOrderById(orderId: string): Observable<Order> {

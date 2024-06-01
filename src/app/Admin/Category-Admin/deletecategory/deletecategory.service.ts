@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DeletecategoryService {
 
-  private apiUrl = 'http://localhost:3000/category';
+  private apiUrl = 'https://index-1242.onrender.com/category';
   constructor(private http: HttpClient) {}
   deleteCategory(id: string): Observable<Category> {
     const url = `${this.apiUrl}/${id}`;

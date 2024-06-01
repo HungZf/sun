@@ -60,7 +60,7 @@ export class EditpostComponent implements OnInit {
               formData.append('image', this.selectedFile);
             }
             this.http
-              .post<any>('http://localhost:3000/post/local', formData)
+              .post<any>('https://index-1242.onrender.com/post/local', formData)
               .subscribe({
                 next: () => {
                  

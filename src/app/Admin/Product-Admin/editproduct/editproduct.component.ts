@@ -73,7 +73,7 @@ onUpdateProduct(): void {
           formData.append('photo', this.selectedFile);
         }
         this.http
-          .post<any>('http://localhost:3000/product/local', formData)
+          .post<any>('https://index-1242.onrender.com/product/local', formData)
           .subscribe({
             next: () => {
              

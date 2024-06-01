@@ -7,8 +7,8 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class EditproductService {
-  private apiUrl = 'http://localhost:3000/product';
-  private apiUrl1  = 'http://localhost:3000/category';
+  private apiUrl = 'https://index-1242.onrender.com/product';
+  private apiUrl1  = 'https://index-1242.onrender.com/category';
   constructor(private http: HttpClient) {}
   updateProduct(id: string, product: Product): Observable<Product> {
     const url = `${this.apiUrl}/${id}`;

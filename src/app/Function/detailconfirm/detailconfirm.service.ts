@@ -7,9 +7,9 @@ import { Order ,OrderDetail,Product} from './detailconfirm.module';
 })
 export class DetailconfirmService {
 
-  private apiUrl = 'http://localhost:3000/order/user/orderWait';
-  private apiUrl1 = 'http://localhost:3000/product';
-  private apiUrl2 = 'http://localhost:3000/order/detail'; 
+  private apiUrl = 'https://index-1242.onrender.com/order/user/orderWait';
+  private apiUrl1 = 'https://index-1242.onrender.com/product';
+  private apiUrl2 = 'https://index-1242.onrender.com/order/detail'; 
  
   
   constructor(private http: HttpClient) { }

@@ -42,7 +42,7 @@ export class EditCustomerComponent implements OnInit {
   
   onEdit() {
       // Gửi yêu cầu PUT lên server
-      this.http.put<any>('http://localhost:3000/users/me', this.editObj, { headers: { Authorization: `Bearer ${this.token}` } }).subscribe(
+      this.http.put<any>('https://index-1242.onrender.com/users/me', this.editObj, { headers: { Authorization: `Bearer ${this.token}` } }).subscribe(
        {next:  (res) => {
         if (res) {
           console.log(res);
