@@ -5,5 +5,30 @@ th {
     width: 30rem;
 }
 .span9 {
-    width: 1178px;
+    width: 98%;
+}
+@media (max-width: 767px)
+{
+.container {
+    font-size: 72%;
+   
+}
+strong {
+    font-weight: bold;
+    font-size: 124%;
+   
+
+}
+.span9 {
+    font-size: 92%;
+}
+form {
+  text-align: center;
+    margin-right: 197px;
+}
+input.input-mini.ng-untouched.ng-pristine.ng-valid {
+    width: 22px;
+    font-size: 11px;
+    height: 9px;
+}
 }

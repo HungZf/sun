@@ -12,3 +12,30 @@ th {
 h4.title {
     width: 135%;
 }
+
+
+    @media (max-width: 767px)
+    {
+    .container {
+        font-size: 72%;
+       
+    }
+    strong {
+        font-weight: bold;
+        font-size: 124%;
+       
+    
+    }
+    .span9 {
+        font-size: 116%;
+    }
+    form {
+      text-align: center;
+        margin-right: 197px;
+    }
+    .row {
+    font-size: 75%;
+    width: 78%;
+    margin-left: -8px;
+    }
+    }

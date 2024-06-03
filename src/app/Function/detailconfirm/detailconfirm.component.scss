@@ -5,7 +5,11 @@ th {
     width: 30rem;
 }
 .span9 {
-    width: 1178px;
+    width: 98%;
+}
+
+.col-sm-2 {
+    width: 100px ;
 }
 .col-sm-4 {
     width: 260px;
@@ -20,3 +24,23 @@ label#for123 {
 #for123 {
     font-weight: 700;
   }
+  @media (max-width: 767px)
+{
+.container {
+    font-size: 67%;
+   
+}
+strong {
+    font-weight: bold;
+    font-size: 124%;
+   
+
+}
+.span9 {
+    font-size: 116%;
+}
+form {
+  text-align: center;
+    margin-right: 197px;
+}
+}
